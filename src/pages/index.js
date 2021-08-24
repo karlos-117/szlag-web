@@ -7,7 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage = () => {
   return (
    <Layout pageTitle="Home Page">
-     <p>I'm making this by following the gatsby tutorial</p>
+     <p>@szlag.my.pitch.up</p>
      <StaticImage
         alt="Szlag logo over a white background"
         src="../images/szlag-white.jpg"
