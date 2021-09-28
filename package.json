@@ -14,6 +14,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/anton": "^4.5.0",
+    "@fontsource/archivo-black": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.1",
+    "@fontsource/roboto-condensed": "^4.5.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^3.12.0",
@@ -21,6 +25,7 @@
     "gatsby-plugin-image": "^1.12.0",
     "gatsby-plugin-mdx": "^2.14.0",
     "gatsby-plugin-sharp": "^3.12.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-images": "^5.11.0",
     "gatsby-remark-prismjs": "^5.11.0",
     "gatsby-source-filesystem": "^3.12.0",

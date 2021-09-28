@@ -1,5 +1,8 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import "@fontsource/anton"
+import "@fontsource/roboto-condensed"
+import "@fontsource/archivo-black"
 import {
     container,
     heading,

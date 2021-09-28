@@ -1,13 +1,14 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
+import {eventLink} from '../../components/layout.module.css'
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Past Events">
       {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>
-            <h2>
+            <h2 className={eventLink}>
               <Link to={`/blog/${node.slug}`}>
                 {node.frontmatter.title}
               </Link>

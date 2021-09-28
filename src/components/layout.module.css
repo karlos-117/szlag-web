@@ -1,9 +1,10 @@
 .container {
     margin: auto;
-    max-width: 500px;
+    max-width: 1000px;
     font-family: sans-serif;
   }
 .heading {
+    font-family: "anton";
     color: rebeccapurple;
   }
 .nav-links {
@@ -15,11 +16,21 @@
     padding-right: 2rem;
   }
 .nav-link-text {
+    font-family: "anton";
     color: black;
   }
 .site-title {
+    font-family: "anton";
     font-size: 3rem;
     color: gray;
     font-weight: 700;
     margin: 3rem 0;
   }
+.body {
+    font-family: "roboto condensed";
+    color: red;
+}
+.event-link{
+    font-family: "anton";
+    color: black;
+}

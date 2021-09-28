@@ -3,6 +3,7 @@ import { graphql } from 'gatsby' // highlight-line
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
+import {body} from '../../components/layout.module.css'
 const BlogPost = ({data}) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
 
@@ -18,10 +19,13 @@ const BlogPost = ({data}) => {
         <a> 
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>
-      </p>
-      <MDXRenderer>
+        <a className={body}>
+        <MDXRenderer>
         {data.mdx.body}
-      </MDXRenderer>
+        </MDXRenderer>
+        </a>
+      </p>
+      
     </Layout>
   )
 }
