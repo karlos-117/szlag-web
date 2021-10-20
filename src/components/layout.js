@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/anton"
 import "@fontsource/roboto-condensed"
 import "@fontsource/archivo-black"
+import { StaticImage } from 'gatsby-plugin-image'
 import {
     container,
     heading,
@@ -22,14 +23,20 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `)
+  
   return (
     <main className={container}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <header className={siteTitle}>
+      <StaticImage
+        alt="Szlag logo"
+        src="../images/szlag-logo.png"
+      /> 
+      </header>
       <nav >
          <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
+            <Link to="/home" className={navLinkText}>
               Home
             </Link>
           </li>
