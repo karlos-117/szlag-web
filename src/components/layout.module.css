@@ -24,6 +24,7 @@
 .nav-link-text {
     font-family: "anton";
     color: rgb(255, 255, 255);
+    font-size: 20px;
   }
 .site-title {
     height: 70px;
@@ -34,7 +35,7 @@
     font-family: "roboto condensed";
     color: rgb(255, 255, 255);
 }
-.event-link{
+.event-link > a {
     font-family: "anton";
     color: rgb(255, 255, 255);
 }
